@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Advogado de Família e Sucessões | Atendimento Jurídico</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --azul:#12172b;
+  --dourado:#d4af37;
+  --verde:#25d366;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Segoe UI, Arial, sans-serif;
+  background:#faf9f7;
+  color:#333;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  background:
+    linear-gradient(rgba(18,23,43,.75),rgba(18,23,43,.75)),
+    url("mesario.jpg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:30px 20px;
+  color:#fff;
+}
+
+.hero-box{max-width:760px}
+
+.hero h1{
+  font-size:38px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  font-size:17px;
+  line-height:1.6;
+}
+
+/* BOTÃO */
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:16px 34px;
+  background:var(--verde);
+  color:#fff;
+  border-radius:8px;
+  font-weight:bold;
+  text-decoration:none;
+}
+
+/* BADGES */
+.badges{
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  font-size:13px;
+}
+
+/* SEÇÕES */
+section{
+  padding:90px 20px;
+  text-align:center;
+}
+
+h2{
+  color:var(--azul);
+  margin-bottom:35px;
+}
+
+/* ETAPAS */
+.steps{
+  display:flex;
+  justify-content:center;
+  gap:35px;
+  flex-wrap:wrap;
+}
+
+.step{max-width:260px}
+
+/* PERFIL */
+.profile{
+  margin-top:50px;
+}
+
+.profile img{
+  width:300px;              /* ⬅️ AUMENTADO EM 200% */
+  height:300px;
+  object-fit:cover;
+  border-radius:50%;
+  border:5px solid var(--dourado);
+  margin-bottom:20px;
+}
+
+/* CARDS */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.card{
+  background:#fff;
+  padding:25px;
+  border-radius:8px;
+  border:1px solid #eee;
+}
+
+/* DEPOIMENTOS */
+.testimonial{
+  max-width:760px;
+  margin:auto;
+  background:#fff;
+  padding:45px;
+  border-radius:12px;
+  border:2px solid var(--dourado);
+  font-style:italic;
+  font-size:16px;
+}
+
+/* RODAPÉ */
+footer{
+  background:var(--azul);
+  color:#fff;
+  padding:45px 20px;
+  font-size:13px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .hero h1{font-size:30px}
+  .profile img{
+    width:220px;
+    height:220px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-box">
+    <h1>Advogado de Família e Sucessões</h1>
+    <p>
+      Atendimento jurídico ético e especializado em divórcio, guarda,
+      pensão alimentícia, inventário e conflitos familiares.
+    </p>
+
+    <a href="https://wa.me/5517992435534" class="btn">
+      Falar com Advogado no WhatsApp
+    </a>
+
+    <div class="badges">
+      <span>✔ Sigilo profissional</span>
+      <span>✔ Atendimento humanizado</span>
+      <span>✔ Ética e responsabilidade</span>
+    </div>
+  </div>
+</section>
+
+<!-- ATENDIMENTO -->
+<section>
+  <h2>Como Funciona o Atendimento</h2>
+  <div class="steps">
+    <div class="step">
+      <h3>Contato Inicial</h3>
+      <p>Relato do caso com total confidencialidade.</p>
+    </div>
+    <div class="step">
+      <h3>Análise Jurídica</h3>
+      <p>Orientação clara e responsável.</p>
+    </div>
+    <div class="step">
+      <h3>Acompanhamento</h3>
+      <p>Atuação ética e transparente.</p>
+    </div>
+  </div>
+
+  <div class="profile">
+    <img src="dr-marcelo.jpg" alt="Dr. Marcelo Machado">
+    <h3>Dr. Marcelo Machado</h3>
+    <p>
+      Advogado atuante em Direito de Família e Sucessões,
+      com atendimento personalizado e postura ética.
+    </p>
+  </div>
+</section>
+
+<!-- ATUAÇÃO -->
+<section>
+  <h2>Principais Atendimentos</h2>
+  <div class="cards">
+    <div class="card">Divórcio Judicial e Extrajudicial</div>
+    <div class="card">Guarda e Regulamentação de Visitas</div>
+    <div class="card">Pensão Alimentícia</div>
+    <div class="card">Inventário e Partilha</div>
+    <div class="card">Planejamento Sucessório</div>
+    <div class="card">Mediação Familiar</div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section>
+  <h2>O que nossos clientes dizem</h2>
+  <div class="testimonial" id="dep"></div>
+</section>
+
+<!-- RODAPÉ -->
+<footer>
+  <p>Conteúdo informativo conforme Código de Ética e Disciplina da OAB. </p>
+</footer>
+
+<script>
+const depoimentos = [
+  "Excelente advogado, muito atencioso e competente; ótimo profissional. – Ana Paula R.",
+  "Desde o primeiro atendimento, senti que estava em mãos seguras. O Dr. Marcelo conduziu todo o processo com clareza, respeito e muita firmeza. Em um momento delicado da minha vida, ter um profissional tão preparado e humano fez toda a diferença. – José Carlos M.",
+  "Advogado ético, técnico e muito acessível. – Juliana S.",
+  "Condução responsável em um momento difícil da minha vida. – Roberto L.",
+  "Me senti acolhida e bem orientada. – Fernanda C.",
+  "Postura séria e explicações objetivas, me transmitiu confiança desde o primeiro contato. . – Marcos A.",
+  "Além do conhecimento jurídico, encontrei empatia e sensibilidade. Fui ouvida, compreendida e orientada com muito cuidado. Recomendo para quem busca um advogado sério, acessível e verdadeiramente comprometido; – Patrícia D."
+];
+
+let i = 0;
+function trocarDepoimento(){
+  document.getElementById("dep").innerText = depoimentos[i];
+  i = (i + 1) % depoimentos.length;
+}
+trocarDepoimento();
+setInterval(trocarDepoimento, 10000);
+</script>
+
+</body>
+</html>
