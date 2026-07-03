@@ -93,11 +93,11 @@
         .step h3{ color: var(--azul-marinho); font-size: 24px; margin-bottom: 15px; }
         .step p{ font-size: 19px; color: #555; }
 
-        /* PERFIL */
-        .profile{ margin-top: 80px; background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        .profile img{ width: 250px; height: 250px; object-fit:cover; border-radius:50%; border: 6px solid var(--dourado); margin-bottom: 25px; }
-        .profile h3{ font-size: 30px; margin-bottom: 10px; color: var(--azul-marinho); }
-        .profile p{ font-size: 20px; max-width: 600px; margin: auto; }
+        /* PERFIL CORRIGIDO (FOTO MAIOR E RETANGULAR ELEGANTE) */
+        .profile{ margin-top: 80px; background: #fff; padding: 50px 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; }
+        .profile img{ width: 100%; max-width: 520px; height: auto; object-fit: cover; border-radius: 12px; border: 4px solid var(--dourado); margin-bottom: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .profile h3{ font-size: 32px; margin-bottom: 15px; color: var(--azul-marinho); font-weight: 700; }
+        .profile p{ font-size: 21px; max-width: 750px; margin: 0 auto 35px auto; color: #444; }
 
         /* CARDS DE SERVIÇO */
         .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap: 25px; margin-top: 40px; }
@@ -138,6 +138,8 @@
             .hero p{ font-size: 19px; }
             .btn{ font-size: 20px; padding: 20px 30px; width: 100%; }
             h2{ font-size: 28px; }
+            .profile h3{ font-size: 26px; }
+            .profile p{ font-size: 18px; }
         }
     </style>
 </head>
@@ -147,8 +149,6 @@
   <div class="hero-box">
     <h1>Protegendo o que é mais valioso para você: sua família, seus bens e a sua liberdade.</h1>
     <p>Uma advocacia estratégica, ágil e humanizada para garantir a sua tranquilidade e segurança jurídica nos momentos mais decisivos.</p>
-
-        <p>QUERO PROTEGER MEUS DIREITOS AGORA</p>
 
     <a href="https://wa.me/5517992435534?text=Olá,%20Dr.%20Marcelo.%20Vi%20seu%20anúncio%20no%20Google%20e%20gostaria%20de%20uma%20consulta." 
        onclick="return gtag_report_conversion('https://wa.me/5517992435534?text=Olá,%20Dr.%20Marcelo.%20Vi%20seu%20anúncio%20no%20Google%20e%20gostaria%20de%20uma%20consulta.');" 
@@ -181,11 +181,19 @@
     </div>
   </div>
 
+  <!-- BLOCO DE PERFIL REESTRUTURADO E INTEGRADO -->
   <div class="profile">
-    <img src="dr-marcelo.jpg" alt="Dr. Marcelo Machado de Melo - Advogado" style="width: 100%; max-width: 450px; height: auto; border-radius: 8px;">
+    <img src="dr-marcelo.jpg" alt="Dr. Marcelo Machado de Melo - Advogado">
     <h3>Dr. Marcelo Machado de Melo</h3>
-    <p>Advocacia estratégica, ágil e humanizada para garantir a sua tranquilidade e segurança jurídica nos momentos mais decisivos da sua vida, e de sua família.</p>
-</div>
+    <p>Protegendo o que é mais valioso para você: sua família, seus bens e a sua liberdade. Uma advocacia estratégica, ágil e humanizada para garantir a sua tranquilidade e segurança jurídica nos momentos mais decisivos da sua vida.</p>
+    
+    <!-- Gatilho de ação imediata integrado ao perfil -->
+    <a href="https://wa.me/5517992435534?text=Olá,%20Dr.%20Marcelo.%20Vi%20seu%20anúncio%20no%20Google%20e%20gostaria%20de%20uma%20consulta." 
+       onclick="return gtag_report_conversion('https://wa.me/5517992435534?text=Olá,%20Dr.%20Marcelo.%20Vi%20seu%20anúncio%20no%20Google%20e%20gostaria%20de%20uma%20consulta.');" 
+       class="btn" style="font-size: 19px; padding: 18px 35px;">
+      Iniciar Consulta com o Dr. Marcelo
+    </a>
+  </div>
 </section>
 
 <section id="servicos" style="background: #f0f2f5;">
