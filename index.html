@@ -97,7 +97,7 @@
         .profile{ margin-top: 80px; background: #fff; padding: 50px 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; }
         .profile img{ width: 100%; max-width: 520px; height: auto; object-fit: cover; border-radius: 12px; border: 4px solid var(--dourado); margin-bottom: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
         .profile h3{ font-size: 32px; margin-bottom: 15px; color: var(--azul-marinho); font-weight: 700; }
-        .profile p{ font-size: 21px; max-width: 750px; margin: 0 auto 35px auto; color: #444; }
+        .profile p{ font-size: 22px; max-width: 750px; margin: 0 auto 35px auto; color: #444; }
 
         /* CARDS DE SERVIÇO */
         .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap: 25px; margin-top: 40px; }
@@ -139,7 +139,7 @@
             .btn{ font-size: 20px; padding: 20px 30px; width: 100%; }
             h2{ font-size: 28px; }
             .profile h3{ font-size: 26px; }
-            .profile p{ font-size: 18px; }
+            .profile p{ font-size: 19px; }
         }
     </style>
 </head>
@@ -181,17 +181,21 @@
     </div>
   </div>
 
-  <!-- BLOCO DE PERFIL REESTRUTURADO E INTEGRADO -->
+  <!-- BLOCO DE PERFIL REESTRUTURADO -->
   <div class="profile">
     <img src="dr-marcelo.jpg" alt="Dr. Marcelo Machado de Melo - Advogado">
     <h3>Dr. Marcelo Machado de Melo</h3>
-    <p>Protegendo o que é mais valioso para você: sua família, seus bens e a sua liberdade. Uma advocacia estratégica, ágil e humanizada para garantir a sua tranquilidade e segurança jurídica nos momentos mais decisivos da sua vida.</p>
     
-    <!-- Gatilho de ação imediata integrado ao perfil -->
+    <!-- Frase gatilho posicionada acima do botão -->
+    <p style="font-size: 22px; font-weight: 700; color: var(--azul-marinho); margin: 15px auto 25px auto;">
+        QUERO PROTEGER MEUS DIREITOS AGORA
+    </p>
+    
+    <!-- Link único do WhatsApp com rastreamento -->
     <a href="https://wa.me/5517992435534?text=Olá,%20Dr.%20Marcelo.%20Vi%20seu%20anúncio%20no%20Google%20e%20gostaria%20de%20uma%20consulta." 
        onclick="return gtag_report_conversion('https://wa.me/5517992435534?text=Olá,%20Dr.%20Marcelo.%20Vi%20seu%20anúncio%20no%20Google%20e%20gostaria%20de%20uma%20consulta.');" 
        class="btn" style="font-size: 19px; padding: 18px 35px;">
-      Iniciar Consulta com o Dr. Marcelo
+      Fale diretamente com o Dr. Marcelo no WhatsApp
     </a>
   </div>
 </section>
@@ -217,7 +221,7 @@
     <div style="max-width: 800px; margin: auto;">
         <p><strong>Dr. Marcelo Machado de Melo - Advogado</strong></p>
         <p>OAB/SP 351.947</p>
-        <p style="margin-top: 25px; opacity: 0.6; line-height: 1.4;">Conteúdo informativo conforme o Código de Ética e Disciplina da OAB. Este site não oferece promessa de resultados garantidos, cada caso é analisado individualmente.</p>
+        <p style="margin-top: 25px; opacity: 0.6; line-height: 1.4;">Conteúdo informativo conforme o Código de Ética e Disciplina da OAB. Este site não oferece promessa de resultados garantidos, cada caso é analyzed individualmente.</p>
     </div>
 </footer>
 
