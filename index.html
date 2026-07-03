@@ -1,138 +1,239 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Advogado Especializado na área de Família e Sucessões | Atendimento Jurídico</title>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18177757357"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <title>Dr. Marcelo Machado | Advogado Criminal - Família e Sucessões</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18177757357"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18177757357');
 
-  gtag('config', 'AW-18177757357');
-</script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-:root{ --azul:#12172b; --dourado:#d4af37; --verde:#25d366; }
-*{box-sizing:border-box}
-body{ margin:0; font-family:Segoe UI, Arial, sans-serif; background:#faf9f7; color:#333; }
-.hero{ min-height:100vh; background: linear-gradient(rgba(18,23,43,.75),rgba(18,23,43,.75)), url("mesario.jpg") center/cover no-repeat; display:flex; align-items:center; justify-content:center; text-align:center; padding:30px 20px; color:#fff; }
-.hero-box{max-width:760px}
-.hero h1{ font-size:38px; margin-bottom:15px; }
-.hero p{ font-size:17px; line-height:1.6; }
-.btn{ display:inline-block; margin-top:25px; padding:16px 34px; background:var(--verde); color:#fff; border-radius:8px; font-weight:bold; text-decoration:none; cursor:pointer; font-size:18px; border:none; transition: transform 0.2s; }
-.btn:hover { transform: scale(1.05); }
-.badges{ margin-top:20px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap; font-size:13px; }
-section{ padding:90px 20px; text-align:center; }
-h2{ color:var(--azul); margin-bottom:35px; }
-.steps{ display:flex; justify-content:center; gap:35px; flex-wrap:wrap; }
-.step{max-width:260px}
-.profile{ margin-top:50px; }
-.profile img{ width:300px; height:300px; object-fit:cover; border-radius:50%; border:5px solid var(--dourado); margin-bottom:20px; }
-.cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; max-width:900px; margin:auto; }
-.card{ background:#fff; padding:25px; border-radius:8px; border:1px solid #eee; }
-.testimonial{ max-width:760px; margin:auto; background:#fff; padding:45px; border-radius:12px; border:2px solid var(--dourado); font-style:italic; font-size:16px; }
-footer{ background:var(--azul); color:#fff; padding:45px 20px; font-size:13px; }
-@media(max-width:768px){ .hero h1{font-size:30px} .profile img{ width:220px; height:220px; } }
-</style>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17424753504"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-17424753504');
-
-  // FUNÇÃO DE RASTREAMENTO DO GOOGLE ADS
-  function gtag_report_conversion(url) {
-    var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
+      // FUNÇÃO DE RASTREAMENTO DE CONVERSÃO (CLIQUE NO WHATSAPP)
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-18177757357/I-ttCJGjqIQbEODG4vRA',
+            'event_callback': callback
+        });
+        return false;
       }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-17424753504/I-ttCJGjqIQbEODG4vRA',
-        'event_callback': callback
-    });
-    return false;
-  }
-</script>
-</head>
+    </script>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root{ 
+            --azul-marinho: #0f1425; 
+            --azul-claro: #1c2442;
+            --dourado: #c5a059; 
+            --verde: #25d366; 
+            --texto-claro: #f4f4f4;
+            --texto-escuro: #333;
+        }
+
+        *{box-sizing:border-box}
+        body{ margin:0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background:#fafafa; color: var(--texto-escuro); line-height: 1.6; }
+
+        /* HERO SECTION - Ajuste de Contraste e Impacto */
+        .hero{ 
+            min-height: 90vh; 
+            background: linear-gradient(rgba(15, 20, 37, 0.82), rgba(15, 20, 37, 0.82)), url("mesario.jpg") center/cover no-repeat; 
+            display:flex; 
+            align-items:center; 
+            justify-content:center; 
+            text-align:center; 
+            padding: 60px 20px; 
+            color: #fff; 
+        }
+        .hero-box{ max-width: 850px; }
+        .hero h1{ font-size: 48px; margin-bottom: 20px; font-weight: 700; line-height: 1.1; color: #fff; }
+        .hero p{ font-size: 22px; line-height: 1.6; color: var(--texto-claro); max-width: 700px; margin: 0 auto 30px; }
+
+        /* BOTÃO - Efeito de destaque */
+        .btn{ 
+            display:inline-block; 
+            padding: 22px 45px; 
+            background: var(--verde); 
+            color:#fff; 
+            border-radius: 50px; 
+            font-weight:bold; 
+            text-decoration:none; 
+            font-size: 22px; 
+            transition: all 0.3s ease; 
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); }
+
+        /* BADGES */
+        .badges{ margin-top: 35px; display:flex; justify-content:center; gap: 20px; flex-wrap:wrap; }
+        .badges span{ 
+            font-size: 16px; 
+            background: rgba(255,255,255,0.1); 
+            padding: 8px 15px; 
+            border-radius: 5px; 
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* SEÇÕES */
+        section{ padding: 100px 20px; text-align:center; max-width: 1200px; margin: auto; }
+        h2{ color: var(--azul-marinho); font-size: 36px; margin-bottom: 50px; position: relative; padding-bottom: 15px; }
+        h2::after{ content:''; width: 60px; height: 3px; background: var(--dourado); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+
+        /* PASSOS */
+        .steps{ display:flex; justify-content:center; gap: 40px; flex-wrap:wrap; margin-bottom: 60px; }
+        .step{ max-width: 300px; flex: 1 1 250px; }
+        .step h3{ color: var(--azul-marinho); font-size: 24px; margin-bottom: 15px; }
+        .step p{ font-size: 19px; color: #555; }
+
+        /* PERFIL */
+        .profile{ margin-top: 80px; background: #fff; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .profile img{ width: 250px; height: 250px; object-fit:cover; border-radius:50%; border: 6px solid var(--dourado); margin-bottom: 25px; }
+        .profile h3{ font-size: 30px; margin-bottom: 10px; color: var(--azul-marinho); }
+        .profile p{ font-size: 20px; max-width: 600px; margin: auto; }
+
+        /* CARDS DE SERVIÇO */
+        .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap: 25px; margin-top: 40px; }
+        .card{ 
+            background: #fff; 
+            padding: 35px 25px; 
+            border-radius: 12px; 
+            border-bottom: 4px solid var(--dourado); 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--azul-marinho);
+            transition: 0.3s;
+        }
+
+        /* DEPOIMENTOS */
+        .testimonial{ 
+            max-width: 800px; 
+            margin:auto; 
+            background: #fff; 
+            padding: 50px; 
+            border-radius: 15px; 
+            border-left: 8px solid var(--dourado); 
+            font-style: italic; 
+            font-size: 21px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            min-height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s;
+        }
+
+        footer{ background: var(--azul-marinho); color: rgba(255,255,255,0.7); padding: 60px 20px; font-size: 15px; text-align: center; }
+
+        @media(max-width:768px){ 
+            .hero h1{ font-size: 36px; } 
+            .hero p{ font-size: 19px; }
+            .btn{ font-size: 20px; padding: 20px 30px; width: 100%; }
+            h2{ font-size: 28px; }
+        }
+    </style>
+</head>
 <body>
 
-<section class="hero">
+<header class="hero">
   <div class="hero-box">
-    <h1>Advogado Especializado em Família e Sucessões</h1>
-    <p>Atendimento jurídico ético, responsável e honesto na sua defesa nos casos de divórcio, guarda, pensão alimentícia, inventário e conflitos familiares.</p>
+    <h1>Especialista em Direito de Família e Sucessões; e Penal</h1>
+    <p>Resolução ágil e humanizada para proteger os seus direitos, da sua família em casos de Inventário, Divórcio, Guarda; e também na esfera penal.</p>
 
     <a href="https://wa.me/5517992435534?text=Olá,%20Dr.%20Marcelo.%20Vi%20seu%20anúncio%20no%20Google%20e%20gostaria%20de%20uma%20consulta." 
        onclick="return gtag_report_conversion('https://wa.me/5517992435534?text=Olá,%20Dr.%20Marcelo.%20Vi%20seu%20anúncio%20no%20Google%20e%20gostaria%20de%20uma%20consulta.');" 
        class="btn">
-      Falar com Advogado no WhatsApp
+      Falar com Especialista no WhatsApp
     </a>
 
     <div class="badges">
-      <span>✔ Sigilo total</span>
-      <span>✔ Atendimento humanizado</span>
-      <span>✔ Ética e responsabilidade</span>
-      <span>✔ Honestidade e confiaça</span>
+      <span>✔ Sigilo Profissional</span>
+      <span>✔ Atendimento Online ou Presencial</span>
+      <span>✔ Ética e Transparência</span>
     </div>
   </div>
-</section>
+</header>
 
-<section>
+<section id="atendimento">
   <h2>Como é o Nosso Atendimento?</h2>
   <div class="steps">
-    <div class="step"><h3>Contato Inicial</h3><p>Relate o caso com total confidencialidade.</p></div>
-    <div class="step"><h3>Análise Jurídica Total</h3><p>Orientação clara, ética e responsável.</p></div>
-    <div class="step"><h3>Acompanhamento</h3><p>Atuação transparente e sincera.</p></div>
+    <div class="step">
+        <h3>1. Contato Inicial</h3>
+        <p>Conversa imediata para entender a sua urgência com total sigilo.</p>
+    </div>
+    <div class="step">
+        <h3>2. Análise Estratégica</h3>
+        <p>Orientação técnica e clara sobre as melhores vias (Judicial ou Extrajudicial).</p>
+    </div>
+    <div class="step">
+        <h3>3. Atuação Eficaz</h3>
+        <p>Acompanhamento próximo de cada etapa até a resolução final do caso.</p>
+    </div>
   </div>
+
   <div class="profile">
-    <img src="dr-marcelo.jpg" alt="Dr. Marcelo Machado">
+    <img src="dr-marcelo.jpg" alt="Dr. Marcelo Machado - Advogado">
     <h3>Dr. Marcelo Machado</h3>
-    <p>Advogado com atendimento personalizado; atuante em Direito de Família e Sucessões.</p>
+    <p>Advocacia técnica e humanizada, focada em trazer segurança jurídica para momentos decisivos da sua vida, e de sua familia.</p>
   </div>
 </section>
 
-<section>
-  <h2>Principais Atendimentos</h2>
+<section id="servicos" style="background: #f0f2f5;">
+  <h2>Áreas de Atuação Especializada</h2>
   <div class="cards">
-    <div class="card">Divórcio Judicial e Extrajudicial</div>
-    <div class="card">Guarda e Regulamentação de Visitas</div>
-    <div class="card">Pensão Alimentícia</div>
-    <div class="card">Inventário e Partilha</div>
-    <div class="card">Mediação Familiar</div>
+    <div class="card">Divórcio (Cartório ou Judicial)</div>
+    <div class="card">Inventário e Partilha de Bens</div>
+    <div class="card">Pensão Alimentícia e Revisão</div>
+    <div class="card">Guarda e Alienação Parental</div>
+    <div class="card">União Estável e Contratos</div>
+    <div class="card">Criminal</div>
   </div>
 </section>
 
-<section>
-  <h2>O que nossos clientes dizem</h2>
-  <div class="testimonial" id="dep"></div>
+<section id="depoimentos">
+  <h2>Confiança e Resultados</h2>
+  <div class="testimonial" id="dep">Carregando depoimentos...</div>
 </section>
 
-<footer><p>Conteúdo informativo conforme Código de Ética e Disciplina da OAB.</p></footer>
+<footer>
+    <div style="max-width: 800px; margin: auto;">
+        <p><strong>Dr. Marcelo Machado - Advogado</strong></p>
+        <p>OAB/SP 351.947</p>
+        <p style="margin-top: 25px; opacity: 0.6; line-height: 1.4;">Conteúdo informativo conforme o Código de Ética e Disciplina da OAB. Este site não oferece promessa de resultados garantidos, cada caso é analisado individualmente.</p>
+    </div>
+</footer>
 
 <script>
 const depoimentos = [
-  "Excelente advogado, muito atencioso e competente. – Ana Paula Ribeiro S.",
-  "O Dr. Marcelo conduziu todo o processo com clareza e respeito. – José Carlos M.",
-  "Advogado ético, técnico e muito acessível. – Juliana Seixas.",
-  "Condução responsável em um momento difícil da minha vida. – Zulmira L.",
-  "Me senti acolhida e bem orientada. – Giovanna C."
+  "“Excelente advogado, muito atencioso e competente. Me deu total segurança no processo.” – Ana Paula Ribeiro S.",
+  "“Ótimo Advogado, conseguiu reduzir minha condenação de mais de 5 anos de prisão, para somente 5 meses de prestação de serviços” – Paulo G.",
+  "“O Dr. Marcelo conduziu meu inventário com muita clareza e respeito ao momento que eu passava.” – José Carlos M.",
+  "“Atendimento técnico impecável e muito acessível. Recomendo fortemente.” – Juliano Seixas.",
+  "“Condução responsável e honesta. Resolveu meu divórcio de forma rápida e justa.” – Zulmira L.",
+  "“Fiquei muito satisfeita com a orientação. Profissional muito humano e ético.” – Giovanna C."
 ];
 let i = 0;
 function trocarDepoimento(){
   const elemento = document.getElementById("dep");
   if(elemento) {
-    elemento.innerText = depoimentos[i];
-    i = (i + 1) % depoimentos.length;
+    elemento.style.opacity = 0;
+    setTimeout(() => {
+        elemento.innerText = depoimentos[i];
+        elemento.style.opacity = 1;
+        i = (i + 1) % depoimentos.length;
+    }, 500);
   }
 }
 trocarDepoimento();
-setInterval(trocarDepoimento, 9000);
+setInterval(trocarDepoimento, 6000);
 </script>
 
 </body>
