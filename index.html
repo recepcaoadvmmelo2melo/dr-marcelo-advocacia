@@ -1,236 +1,820 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Advocacia Especializada</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    body {
-      background: #0b1220;
-      color: #e5e7eb;
-    }
+    <title>
+        Advogado para Divórcio | Dr. Marcelo Machado de Melo
+    </title>
 
-    /* HERO PREMIUM */
-    header {
-      position: relative;
-      min-height: 85vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 60px 20px;
+    <meta name="description"
+        content="Atuação em Direito de Família. Orientação jurídica em divórcio consensual e litigioso, partilha de bens, guarda dos filhos, pensão alimentícia e regulamentação de visitas.">
 
-      background: url('mesario.jpg') center/cover no-repeat;
-    }
+    <meta name="keywords"
+        content="advogado divórcio, advogado família, divórcio consensual, divórcio litigioso, guarda dos filhos, pensão alimentícia, partilha de bens">
 
-    header::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.65);
-    }
+    <meta name="author"
+        content="Dr. Marcelo Machado de Melo">
 
-    .hero-content {
-      position: relative;
-      max-width: 900px;
-    }
+    <meta property="og:type"
+        content="website">
 
-    header h1 {
-      font-size: 44px;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 15px;
-    }
+    <meta property="og:title"
+        content="Divórcio | Dr. Marcelo Machado de Melo">
 
-    header p {
-      font-size: 18px;
-      color: #cbd5e1;
-      line-height: 1.6;
-    }
+    <meta property="og:description"
+        content="Atuação em Direito de Família com atendimento personalizado.">
 
-    .btn-whatsapp {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 14px 30px;
-      background: #25D366;
-      color: white;
-      border-radius: 10px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.3s;
-    }
+    <meta property="og:image"
+        content="images/dr-marcelo.jpg">
 
-    .btn-whatsapp:hover {
-      transform: translateY(-2px);
-      background: #1ebe5d;
-    }
+    <meta property="og:url"
+        content="https://marcelomelo.adv.br">
 
-    /* CONTAINER */
-    section {
-      padding: 70px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
+    <meta property="og:locale"
+        content="pt_BR">
 
-    h2 {
-      font-size: 28px;
-      margin-bottom: 25px;
-      color: #ffffff;
-    }
+    <link rel="icon"
+        href="images/favicon.png">
 
-    /* CARDS */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
 
-    .card {
-      background: rgba(17, 28, 51, 0.7);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255,255,255,0.08);
-      padding: 25px;
-      border-radius: 14px;
-    }
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
-    .card h3 {
-      margin-bottom: 10px;
-      color: #ffffff;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    /* PERFIL ADVOGADO */
-    .profile {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+    <link rel="stylesheet"
+        href="css/style.css">
 
-    .profile img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #25D366;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 14px;
-      color: #94a3b8;
-      border-top: 1px solid #1f2a44;
-    }
-
-    /* WHATS FIXO */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 60px;
-      height: 60px;
-      background: #25D366;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      text-decoration: none;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-    }
-  </style>
 </head>
 
 <body>
 
 <header>
-  <div class="hero-content">
-    <h1>Advocacia Estratégica e de Alto Padrão</h1>
-    <p>
-      Atendimento jurídico personalizado, com foco em resultados, segurança e atuação rápida em demandas civis, familiares e do consumidor.
-    </p>
 
-    <a class="btn-whatsapp"
-       href="https://wa.me/5511999999999"
-       target="_blank">
-       Falar no WhatsApp
-    </a>
-  </div>
-</header>
+<nav class="navbar">
 
-<section>
-  <h2>Sobre o Advogado</h2>
+<div class="container">
 
-  <div class="card profile">
-    <img src="dr-marcelo.jpg" alt="Dr. Marcelo">
+<a href="/"
+class="logo">
 
-    <div>
-      <h3>Dr. Marcelo</h3>
-      <p>
-        Atuação jurídica estratégica com foco em soluções rápidas, éticas e eficazes.
-        Atendimento humanizado e acompanhamento próximo de cada cliente.
-      </p>
-    </div>
-  </div>
-</section>
+Dr. Marcelo Machado de Melo
 
-<section>
-  <h2>Áreas de Atuação</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Direito Civil</h3>
-      <p>Contratos, indenizações e responsabilidade civil.</p>
-    </div>
-
-    <div class="card">
-      <h3>Direito de Família</h3>
-      <p>Divórcio, guarda, pensão e inventários.</p>
-    </div>
-
-    <div class="card">
-      <h3>Direito do Consumidor</h3>
-      <p>Problemas com bancos, empresas e cobranças indevidas.</p>
-    </div>
-
-    <div class="card">
-      <h3>Consultoria Jurídica</h3>
-      <p>Planejamento e prevenção de riscos legais.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Atendimento</h2>
-
-  <div class="card">
-    <p>
-      Atendimento online e presencial mediante agendamento.
-      Resposta rápida via WhatsApp para análise inicial do caso.
-    </p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Advocacia. Todos os direitos reservados.
-</footer>
-
-<a class="whatsapp-float"
-   href="https://wa.me/5511999999999"
-   target="_blank">
-  💬
 </a>
 
+<ul class="menu">
+
+<li>
+<a href="#inicio">Início</a>
+</li>
+
+<li>
+<a href="#divorcio">Divórcio</a>
+</li>
+
+<li>
+<a href="#vantagens">Atuação</a>
+</li>
+
+<li>
+<a href="#faq">Dúvidas</a>
+</li>
+
+<li>
+<a href="#contato">Contato</a>
+</li>
+
+</ul>
+
+<a
+class="botao-nav"
+
+href="https://wa.me/55SEUNUMERO"
+target="_blank">
+
+Fale pelo WhatsApp
+
+</a>
+
+</div>
+
+</nav>
+
+<section
+class="hero"
+
+id="inicio">
+
+<div class="overlay">
+
+<div class="container hero-grid">
+
+<div class="hero-texto">
+
+<span class="subtitulo">
+
+Direito de Família
+
+</span>
+
+<h1>
+
+Divórcio com Segurança Jurídica,
+Respeito e Clareza em Cada Etapa.
+
+</h1>
+
+<p>
+
+O fim de um casamento envolve decisões importantes sobre patrimônio, filhos e o futuro da família.
+
+Receba orientação jurídica personalizada para conduzir esse momento com segurança, tranquilidade e responsabilidade.
+
+</p>
+
+<div class="hero-botoes">
+
+<a
+href="https://wa.me/55SEUNUMERO"
+target="_blank"
+class="btn-principal">
+
+Conversar pelo WhatsApp
+
+</a>
+
+<a
+href="#contato"
+class="btn-secundario">
+
+Agendar Atendimento
+
+</a>
+
+</div>
+
+<div class="hero-beneficios">
+
+<div>
+
+✔ Atendimento Personalizado
+
+</div>
+
+<div>
+
+✔ Direito de Família
+
+</div>
+
+<div>
+
+✔ Transparência em Todas as Etapas
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-imagem">
+
+<img
+
+src="images/dr-marcelo.jpg"
+
+alt="Dr. Marcelo Machado de Melo">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</header>
+
+<main>
+
+<section
+class="dor-cliente"
+
+id="divorcio">
+
+<div class="container">
+
+<div class="titulo-central">
+
+<h2>
+
+Você não precisa enfrentar esse momento sozinho.
+
+</h2>
+
+<p>
+
+O divórcio pode trazer dúvidas, insegurança e preocupações com o patrimônio, os filhos e a estabilidade da família.
+
+Ter orientação jurídica desde o início permite compreender seus direitos e tomar decisões mais seguras, reduzindo conflitos e preservando aquilo que realmente importa.
+
+</p>
+                    <article class="card">
+
+                        <div class="icone">
+                            ⚖
+                        </div>
+
+                        <h3>
+                            Divórcio Consensual
+                        </h3>
+
+                        <p>
+                            Quando existe acordo entre as partes, o procedimento pode ser conduzido de forma organizada, buscando uma solução jurídica segura e eficiente.
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <div class="icone">
+                            📑
+                        </div>
+
+                        <h3>
+                            Divórcio Litigioso
+                        </h3>
+
+                        <p>
+                            Quando não há consenso, cada decisão exige estratégia jurídica para proteger seus direitos e reduzir riscos durante o processo.
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <div class="icone">
+                            🏠
+                        </div>
+
+                        <h3>
+                            Partilha de Bens
+                        </h3>
+
+                        <p>
+                            Orientação jurídica sobre imóveis, veículos, empresas, investimentos e demais bens adquiridos durante a união.
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <div class="icone">
+                            👨‍👩‍👧
+                        </div>
+
+                        <h3>
+                            Guarda dos Filhos
+                        </h3>
+
+                        <p>
+                            Atuação voltada à proteção do melhor interesse da criança, buscando soluções equilibradas e juridicamente adequadas.
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <div class="icone">
+                            💰
+                        </div>
+
+                        <h3>
+                            Pensão Alimentícia
+                        </h3>
+
+                        <p>
+                            Fixação, revisão, exoneração e execução de alimentos, sempre analisando as particularidades do caso concreto.
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <div class="icone">
+                            🤝
+                        </div>
+
+                        <h3>
+                            Regulamentação de Visitas
+                        </h3>
+
+                        <p>
+                            Construção de soluções que preservem o convívio familiar e garantam segurança jurídica para todas as partes envolvidas.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="vantagens" id="vantagens">
+
+            <div class="container">
+
+                <div class="texto">
+
+                    <span class="subtitulo">
+
+                        Atendimento Humanizado
+
+                    </span>
+
+                    <h2>
+
+                        Cada família possui uma história.
+                        Cada divórcio exige uma estratégia própria.
+
+                    </h2>
+
+                    <p>
+
+                        O encerramento de um casamento não representa apenas o término de uma relação.
+
+                        Envolve patrimônio, filhos, responsabilidades financeiras e decisões que podem refletir por muitos anos.
+
+                    </p>
+
+                    <p>
+
+                        Nosso trabalho consiste em analisar cuidadosamente a situação apresentada, explicar todas as possibilidades jurídicas e conduzir o procedimento com transparência e responsabilidade.
+
+                    </p>
+
+                    <ul class="lista">
+
+                        <li>
+                            ✔ Atendimento individualizado
+                        </li>
+
+                        <li>
+                            ✔ Comunicação clara durante todo o procedimento
+                        </li>
+
+                        <li>
+                            ✔ Estratégia jurídica personalizada
+                        </li>
+
+                        <li>
+                            ✔ Atuação em Direito de Família
+                        </li>
+
+                        <li>
+                            ✔ Segurança jurídica em todas as etapas
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="imagem">
+
+                    <img
+                        src="images/dr-marcelo.jpg"
+                        alt="Dr. Marcelo Machado de Melo">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="processo">
+
+            <div class="container">
+
+                <div class="titulo-central">
+
+                    <span class="subtitulo">
+
+                        Como funciona
+
+                    </span>
+
+                    <h2>
+
+                        Entenda como será o atendimento
+
+                    </h2>
+
+                </div>
+
+                <div class="timeline">
+
+                    <div class="passo">
+
+                        <span>01</span>
+
+                        <h3>
+
+                            Primeiro Contato
+
+                        </h3>
+
+                        <p>
+
+                            Você entra em contato pelo WhatsApp e informa sua situação.
+
+                        </p>
+
+                    </div>
+
+                    <div class="passo">
+
+                        <span>02</span>
+
+                        <h3>
+
+                            Análise Jurídica
+
+                        </h3>
+
+                        <p>
+
+                            O caso é analisado individualmente para identificar as alternativas juridicamente adequadas.
+
+                        </p>
+
+                    </div>
+
+                    <div class="passo">
+
+                        <span>03</span>
+
+                        <h3>
+
+                            Orientação
+
+                        </h3>
+
+                        <p>
+
+                            Todas as etapas são explicadas de forma clara para que você compreenda seus direitos e deveres.
+
+                        </p>
+
+                    </div>
+
+                    <div class="passo">
+
+                        <span>04</span>
+
+                        <h3>
+
+                            Condução do Processo
+
+                        </h3>
+
+                        <p>
+
+                            O procedimento é acompanhado com responsabilidade, buscando uma solução segura para o seu caso.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cta">
+
+            <div class="container">
+
+                <h2>
+
+                    Está pensando em iniciar um divórcio?
+
+                </h2>
+
+                <p>
+
+                    Receba orientação jurídica para compreender seus direitos e identificar o caminho mais adequado para a sua situação.
+
+                </p>
+
+                <a
+                    href="https://wa.me/55SEUNUMERO"
+                    target="_blank"
+                    class="btn-principal">
+
+                    Conversar pelo WhatsApp
+
+                </a>
+
+            </div>
+
+        </section>
+        <section class="faq" id="faq">
+
+            <div class="container">
+
+                <div class="titulo-central">
+
+                    <span class="subtitulo">
+
+                        Perguntas Frequentes
+
+                    </span>
+
+                    <h2>
+
+                        Dúvidas comuns sobre o divórcio
+
+                    </h2>
+
+                </div>
+
+                <div class="faq-container">
+
+                    <details open>
+
+                        <summary>
+                            É possível se divorciar mesmo que o outro cônjuge não concorde?
+                        </summary>
+
+                        <p>
+                            Sim. O ordenamento jurídico brasileiro permite o divórcio independentemente da concordância da outra parte. Cada situação, contudo, exige uma análise específica.
+                        </p>
+
+                    </details>
+
+                    <details>
+
+                        <summary>
+                            Quanto tempo demora um divórcio?
+                        </summary>
+
+                        <p>
+                            O prazo depende de diversos fatores, como existência de acordo entre as partes, filhos menores, necessidade de partilha de bens e outros aspectos do caso concreto.
+                        </p>
+
+                    </details>
+
+                    <details>
+
+                        <summary>
+                            Como funciona a divisão dos bens?
+                        </summary>
+
+                        <p>
+                            A resposta depende do regime de bens adotado durante o casamento e das particularidades do patrimônio do casal.
+                        </p>
+
+                    </details>
+
+                    <details>
+
+                        <summary>
+                            Quem ficará com a guarda dos filhos?
+                        </summary>
+
+                        <p>
+                            A definição da guarda deve sempre observar o melhor interesse da criança ou do adolescente, considerando as circunstâncias de cada família.
+                        </p>
+
+                    </details>
+
+                    <details>
+
+                        <summary>
+                            É possível resolver tudo de forma amigável?
+                        </summary>
+
+                        <p>
+                            Sempre que houver consenso entre as partes, é possível buscar soluções consensuais, reduzindo desgastes e proporcionando maior agilidade ao procedimento.
+                        </p>
+
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <section class="sobre">
+
+            <div class="container">
+
+                <div class="sobre-grid">
+
+                    <div class="foto">
+
+                        <img
+                            src="images/dr-marcelo.jpg"
+                            alt="Dr. Marcelo Machado de Melo">
+
+                    </div>
+
+                    <div class="texto">
+
+                        <span class="subtitulo">
+
+                            Sobre o Advogado
+
+                        </span>
+
+                        <h2>
+
+                            Dr. Marcelo Machado de Melo
+
+                        </h2>
+
+                        <p>
+
+                            Atuação voltada ao Direito de Família e Sucessões, prestando atendimento individualizado e orientação jurídica clara para pessoas que enfrentam momentos delicados de suas vidas.
+
+                        </p>
+
+                        <p>
+
+                            Cada caso é analisado de forma personalizada, buscando soluções juridicamente adequadas e respeitando as particularidades de cada família.
+
+                        </p>
+
+                        <p>
+
+                            O compromisso do escritório é oferecer atendimento transparente, responsável e ético, conduzindo cada procedimento com seriedade e dedicação.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <section
+            class="contato"
+            id="contato">
+
+            <div class="container">
+
+                <div class="contato-grid">
+
+                    <div>
+
+                        <span class="subtitulo">
+
+                            Entre em contato
+
+                        </span>
+
+                        <h2>
+
+                            Vamos conversar sobre o seu caso.
+
+                        </h2>
+
+                        <p>
+
+                            Se você está pensando em iniciar um divórcio ou possui dúvidas sobre patrimônio, guarda dos filhos, pensão alimentícia ou qualquer outra questão relacionada ao Direito de Família, entre em contato.
+
+                        </p>
+
+                        <div class="infos">
+
+                            <p>
+
+                                📞 (17) 99243-5534
+                            </p>
+
+                            <p>
+
+                                📧 m.melo@adv.oabsp.org.br
+
+                            </p>
+
+                            <p>
+
+                                📍 São José do Rio Preto • SP
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <form>
+
+                        <input
+                            type="text"
+                            placeholder="Nome">
+
+                        <input
+                            type="email"
+                            placeholder="E-mail">
+
+                        <input
+                            type="tel"
+                            placeholder="Telefone">
+
+                        <textarea
+                            rows="6"
+                            placeholder="Descreva brevemente sua situação."></textarea>
+
+                        <button
+                            type="submit">
+
+                            Solicitar Atendimento
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+    <footer>
+
+        <div class="container">
+
+            <h3>
+
+                Dr. Marcelo Machado de Melo
+
+            </h3>
+
+            <p>
+
+                Direito de Família e Sucessões
+
+            </p>
+
+            <p>
+
+                Atendimento personalizado • São José do Rio Preto • São Paulo
+            </p>
+
+            <a
+                href="https://wa.me/5517992435534"
+                target="_blank">
+
+                Conversar pelo WhatsApp
+
+            </a>
+
+            <hr>
+
+            <p>
+
+                © 2026 Dr. Marcelo Machado de Melo.
+                Todos os direitos reservados.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
