@@ -1,247 +1,236 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Dr. Marcelo Machado de Melo | Advogado Criminal - Família e Sucessões</title>
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18177757357"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-18177757357');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advocacia Especializada</title>
 
-      // FUNÇÃO DE RASTREAMENTO DE CONVERSÃO (CLIQUE NO WHATSAPP)
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
-          }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-18177757357/I-ttCJGjqIQbEODG4vRA',
-            'event_callback': callback
-        });
-        return false;
-      }
-    </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        :root{ 
-            --azul-marinho: #0f1425; 
-            --azul-claro: #1c2442;
-            --dourado: #c5a059; 
-            --verde: #25d366; 
-            --texto-claro: #f4f4f4;
-            --texto-escuro: #333;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
-        *{box-sizing:border-box}
-        body{ margin:0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background:#fafafa; color: var(--texto-escuro); line-height: 1.6; }
+    body {
+      background: #0b1220;
+      color: #e5e7eb;
+    }
 
-        /* HERO SECTION - Ajuste de Contraste e Impacto */
-        .hero{ 
-            min-height: 90vh; 
-            background: linear-gradient(rgba(15, 20, 37, 0.82), rgba(15, 20, 37, 0.82)), url("mesario.jpg") center/cover no-repeat; 
-            display:flex; 
-            align-items:center; 
-            justify-content:center; 
-            text-align:center; 
-            padding: 60px 20px; 
-            color: #fff; 
-        }
-        .hero-box{ max-width: 850px; }
-        .hero h1{ font-size: 48px; margin-bottom: 20px; font-weight: 700; line-height: 1.1; color: #fff; }
-        .hero p{ font-size: 22px; line-height: 1.6; color: var(--texto-claro); max-width: 700px; margin: 0 auto 30px; }
+    /* HERO PREMIUM */
+    header {
+      position: relative;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
 
-        /* BOTÃO - Efeito de destaque */
-        .btn{ 
-            display:inline-block; 
-            padding: 22px 45px; 
-            background: var(--verde); 
-            color:#fff; 
-            border-radius: 50px; 
-            font-weight:bold; 
-            text-decoration:none; 
-            font-size: 22px; 
-            transition: all 0.3s ease; 
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-            border: none;
-            cursor: pointer;
-        }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); }
+      background: url('mesario.jpg') center/cover no-repeat;
+    }
 
-        /* BADGES */
-        .badges{ margin-top: 35px; display:flex; justify-content:center; gap: 20px; flex-wrap:wrap; }
-        .badges span{ 
-            font-size: 16px; 
-            background: rgba(255,255,255,0.1); 
-            padding: 8px 15px; 
-            border-radius: 5px; 
-            border: 1px solid rgba(255,255,255,0.2);
-        }
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.65);
+    }
 
-        /* SEÇÕES */
-        section{ padding: 100px 20px; text-align:center; max-width: 1200px; margin: auto; }
-        h2{ color: var(--azul-marinho); font-size: 36px; margin-bottom: 50px; position: relative; padding-bottom: 15px; }
-        h2::after{ content:''; width: 60px; height: 3px; background: var(--dourado); position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); }
+    .hero-content {
+      position: relative;
+      max-width: 900px;
+    }
 
-        /* PASSOS */
-        .steps{ display:flex; justify-content:center; gap: 40px; flex-wrap:wrap; margin-bottom: 60px; }
-        .step{ max-width: 300px; flex: 1 1 250px; }
-        .step h3{ color: var(--azul-marinho); font-size: 24px; margin-bottom: 15px; }
-        .step p{ font-size: 19px; color: #555; }
+    header h1 {
+      font-size: 44px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
 
-        /* PERFIL LIMPO (FOTO MAIOR E RETANGULAR ELEGANTE) */
-        .profile{ margin-top: 80px; background: #fff; padding: 50px 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); display: flex; flex-direction: column; align-items: center; }
-        .profile img{ width: 100%; max-width: 520px; height: auto; object-fit: cover; border-radius: 12px; border: 4px solid var(--dourado); margin-bottom: 30px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-        .profile h3{ font-size: 32px; margin-bottom: 0; color: var(--azul-marinho); font-weight: 700; }
+    header p {
+      font-size: 18px;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
 
-        /* CARDS DE SERVIÇO */
-        .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap: 25px; margin-top: 40px; }
-        .card{ 
-            background: #fff; 
-            padding: 35px 25px; 
-            border-radius: 12px; 
-            border-bottom: 4px solid var(--dourado); 
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--azul-marinho);
-            transition: 0.3s;
-        }
+    .btn-whatsapp {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 30px;
+      background: #25D366;
+      color: white;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
 
-        /* DEPOIMENTOS */
-        .testimonial{ 
-            max-width: 800px; 
-            margin:auto; 
-            background: #fff; 
-            padding: 50px; 
-            border-radius: 15px; 
-            border-left: 8px solid var(--dourado); 
-            font-style: italic; 
-            font-size: 21px; 
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            min-height: 180px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: opacity 0.5s;
-        }
+    .btn-whatsapp:hover {
+      transform: translateY(-2px);
+      background: #1ebe5d;
+    }
 
-        footer{ background: var(--azul-marinho); color: rgba(255,255,255,0.7); padding: 60px 20px; font-size: 15px; text-align: center; }
+    /* CONTAINER */
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-        @media(max-width:768px){ 
-            .hero h1{ font-size: 36px; } 
-            .hero p{ font-size: 19px; }
-            .btn{ font-size: 20px; padding: 20px 30px; width: 100%; }
-            h2{ font-size: 28px; }
-            .profile h3{ font-size: 26px; }
-        }
-    </style>
+    h2 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      color: #ffffff;
+    }
+
+    /* CARDS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(17, 28, 51, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 25px;
+      border-radius: 14px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    /* PERFIL ADVOGADO */
+    .profile {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .profile img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #25D366;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: #94a3b8;
+      border-top: 1px solid #1f2a44;
+    }
+
+    /* WHATS FIXO */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="hero">
-  <div class="hero-box">
-    <h1>Protegendo o que é mais valioso para você: sua família, seus bens e a sua liberdade.</h1>
-    <p>Uma advocacia estratégica, ágil e humanizada para garantir a sua tranquilidade e segurança jurídica nos momentos mais decisivos.</p>
+<header>
+  <div class="hero-content">
+    <h1>Advocacia Estratégica e de Alto Padrão</h1>
+    <p>
+      Atendimento jurídico personalizado, com foco em resultados, segurança e atuação rápida em demandas civis, familiares e do consumidor.
+    </p>
 
-    <!-- FRASE GATILHO POSICIONADA EXATAMENTE ACIMA DO BOTÃO DO WHATSAPP -->
-    <h2 style="color: #fff; font-size: 24px; font-weight: 700; margin: 0 auto 20px auto; letter-spacing: 1px; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
-        QUERO PROTEGER MEUS DIREITOS AGORA
-    </h2>
-    <style> header.hero h2::after { display: none; } </style> <!-- Remove a linha dourada apenas desta chamada -->
-
-    <!-- ÚNICO BOTÃO ATIVO NA PÁGINA -->
-    <a href="https://wa.me/5517992435534?text=Olá,%20Dr.%20Marcelo.%20Vi%20seu%20anúncio%20no%20Google%20e%20gostaria%20de%20uma%20consulta." 
-       onclick="return gtag_report_conversion('https://wa.me/5517992435534?text=Olá,%20Dr.%20Marcelo.%20Vi%20seu%20anúncio%20no%20Google%20e%20gostaria%20de%20uma%20consulta.');" 
-       class="btn">
-      Fale diretamente com o Dr. Marcelo no WhatsApp
+    <a class="btn-whatsapp"
+       href="https://wa.me/5511999999999"
+       target="_blank">
+       Falar no WhatsApp
     </a>
-
-    <div class="badges">
-      <span>✔ Sigilo Profissional</span>
-      <span>✔ Atendimento Online ou Presencial</span>
-      <span>✔ Ética e Transparência</span>
-    </div>
   </div>
 </header>
 
-<section id="atendimento">
-  <h2>Como é o Nosso Atendimento?</h2>
-  <div class="steps">
-    <div class="step">
-        <h3>1. Contato Inicial</h3>
-        <p>Conversa imediata para entender a sua urgência com total sigilo.</p>
-    </div>
-    <div class="step">
-        <h3>2. Análise Estratégica</h3>
-        <p>Orientação técnica e clara sobre as melhores vias (Judicial ou Extrajudicial).</p>
-    </div>
-    <div class="step">
-        <h3>3. Atuação Eficaz</h3>
-        <p>Acompanhamento próximo de cada etapa até a resolução final do caso.</p>
-    </div>
-  </div>
+<section>
+  <h2>Sobre o Advogado</h2>
 
-  <!-- BLOCO DE PERFIL LIMPO E PROFISSONAL -->
-  <div class="profile">
-    <img src="dr-marcelo.jpg" alt="Dr. Marcelo Machado de Melo - Advogado">
-    <h3>Dr. Marcelo Machado de Melo</h3>
+  <div class="card profile">
+    <img src="dr-marcelo.jpg" alt="Dr. Marcelo">
+
+    <div>
+      <h3>Dr. Marcelo</h3>
+      <p>
+        Atuação jurídica estratégica com foco em soluções rápidas, éticas e eficazes.
+        Atendimento humanizado e acompanhamento próximo de cada cliente.
+      </p>
+    </div>
   </div>
 </section>
 
-<section id="servicos" style="background: #f0f2f5;">
-  <h2>Áreas de Atuação Especializada</h2>
-  <div class="cards">
-    <div class="card">Divórcio (Cartório ou Judicial)</div>
-    <div class="card">Inventário e Partilha de Bens</div>
-    <div class="card">Pensão Alimentícia e Revisão</div>
-    <div class="card">Guarda e Alienação Parental</div>
-    <div class="card">União Estável e Contratos</div>
-    <div class="card">Criminal</div>
+<section>
+  <h2>Áreas de Atuação</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Direito Civil</h3>
+      <p>Contratos, indenizações e responsabilidade civil.</p>
+    </div>
+
+    <div class="card">
+      <h3>Direito de Família</h3>
+      <p>Divórcio, guarda, pensão e inventários.</p>
+    </div>
+
+    <div class="card">
+      <h3>Direito do Consumidor</h3>
+      <p>Problemas com bancos, empresas e cobranças indevidas.</p>
+    </div>
+
+    <div class="card">
+      <h3>Consultoria Jurídica</h3>
+      <p>Planejamento e prevenção de riscos legais.</p>
+    </div>
   </div>
 </section>
 
-<section id="depoimentos">
-  <h2>Confiança e Resultados</h2>
-  <div class="testimonial" id="dep">Carregando depoimentos...</div>
+<section>
+  <h2>Atendimento</h2>
+
+  <div class="card">
+    <p>
+      Atendimento online e presencial mediante agendamento.
+      Resposta rápida via WhatsApp para análise inicial do caso.
+    </p>
+  </div>
 </section>
 
 <footer>
-    <div style="max-width: 800px; margin: auto;">
-        <p><strong>Dr. Marcelo Machado de Melo - Advogado</strong></p>
-        <p>OAB/SP 351.947</p>
-        <p style="margin-top: 25px; opacity: 0.6; line-height: 1.4;">Conteúdo informativo conforme o Código de Ética e Disciplina da OAB. Este site não oferece promessa de resultados garantidos, cada caso é analisado individualmente.</p>
-    </div>
+  © 2026 Advocacia. Todos os direitos reservados.
 </footer>
 
-<script>
-const depoimentos = [
-  "“Excelente advogado, muito atencioso e competente. Me deu total segurança no processo.” – Ana Paula Ribeiro S.",
-  "“Ótimo Advogado, conseguiu reduzir minha condenação de mais de 5 anos de prisão, para somente 5 meses de prestação de serviços” – Paulo G.",
-  "“O Dr. Marcelo conduziu meu inventário com muita clareza e respeito ao momento que eu passava.” – José Carlos M.",
-  "“Atendimento técnico impecável e muito acessível. Recomendo fortemente.” – Juliano Seixas.",
-  "“Condução responsável e honesta. Resolveu meu divórcio de forma rápida e justa.” – Zulmira L.",
-  "“Fiquei muito satisfeita com a orientação. Profissional muito humano e ético.” – Giovanna C."
-];
-let i = 0;
-function trocarDepoimento(){
-  const elemento = document.getElementById("dep");
-  if(elemento) {
-    elemento.style.opacity = 0;
-    setTimeout(() => {
-        elemento.innerText = depoimentos[i];
-        elemento.style.opacity = 1;
-        i = (i + 1) % depoimentos.length;
-    }, 500);
-  }
-}
-trocarDepoimento();
-setInterval(trocarDepoimento, 6000);
-</script>
+<a class="whatsapp-float"
+   href="https://wa.me/5511999999999"
+   target="_blank">
+  💬
+</a>
 
 </body>
 </html>
