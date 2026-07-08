@@ -10,3 +10,19 @@
 .whatsapp:hover{
   background:#1ebe5d;
 }
+/* FORÇAR BOTÕES VERDES */
+
+a.btn.primary,
+button.btn.primary,
+.whatsapp{
+  background:#25D366 !important;
+  color:#ffffff !important;
+  border-color:#25D366 !important;
+}
+
+a.btn.primary:hover,
+button.btn.primary:hover,
+.whatsapp:hover{
+  background:#1ebe5d !important;
+  border-color:#1ebe5d !important;
+}
